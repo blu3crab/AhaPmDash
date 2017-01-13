@@ -1,0 +1,40 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory 
+        android:title="AHA OPS Settings"
+        android:key="pref_key_ops_settings">
+        <CheckBoxPreference
+            android:key="pref_key_send_diag"
+            android:summary="When selected, this application will occasionally send diagnosis information to the server."
+            android:title="Diagnosis Logging"
+            android:defaultValue="true" />
+        
+    </PreferenceCategory>
+    
+    <PreferenceCategory 
+        android:title="Customization"
+        android:key="pref_key_ops_cust">
+        
+        <afzkl.development.colorpickerview.preference.ColorPickerPreference
+            android:defaultValue="0x7F62CA2D"
+            android:key="pref_key_color_ontrack_success"
+            alphaChannelVisible="true"
+            android:title="Success Color"
+            android:summary="A refresh is required to see these changes." />
+        
+        <afzkl.development.colorpickerview.preference.ColorPickerPreference
+            android:defaultValue="0x7FCFDE29"
+            android:key="pref_key_color_ontrack_risk"
+            alphaChannelVisible="true"
+            android:title="Risk Color"
+            android:summary="A refresh is required to see these changes."  />
+        
+        <afzkl.development.colorpickerview.preference.ColorPickerPreference
+            android:defaultValue="0x7FF77754"
+            android:key="pref_key_color_ontrack_delay"
+            alphaChannelVisible="true"
+            android:title="Delay Color"
+            android:summary="A refresh is required to see these changes."  />
+        
+        
+    </PreferenceCategory>
+</PreferenceScreen>

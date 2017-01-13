@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <FrameLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="9dp"
+    android:padding="5dp">
+    
+    <EditText
+        android:id="@+id/txtSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:drawableLeft="@android:drawable/ic_menu_search">
+        <requestFocus />
+    </EditText>
+    
+    <ImageButton
+        android:id="@+id/clear_txtSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="10dp"
+        android:background="@android:drawable/ic_menu_close_clear_cancel"
+        android:visibility="invisible" />
+    
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ExpandableListView
+            android:id="@+id/list"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="25dp"
+            android:layout_width="match_parent" />
+
+        <fragment
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:name="com.adaptivehandyapps.ahaopsactivity.WelcomeFragment"
+            android:id="@+id/fragment_welcome"
+            tools:layout="@layout/fragment_welcome" />
+
+    </RelativeLayout>
+
+    
+
+</LinearLayout>

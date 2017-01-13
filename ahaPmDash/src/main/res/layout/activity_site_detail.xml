@@ -1,0 +1,21 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/site_detail_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.adaptivehandyapps.ahaopsactivity.SiteDetailActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <fragment
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:name="com.adaptivehandyapps.ahaopsactivity.WelcomeFragment"
+        android:id="@+id/fragment_welcome"
+        tools:layout="@layout/fragment_welcome" />
+
+</FrameLayout>
